@@ -172,6 +172,8 @@
             // 
             // mvvmContext
             // 
+            this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
+            DevExpress.Utils.MVVM.BindingExpression.CreatePropertyBinding(typeof(DemoMVVM.MainViewModel), "WebsiteName", this.textEditWebsiteName, "Text")});
             this.mvvmContext.ContainerControl = this;
             this.mvvmContext.ViewModelType = typeof(DemoMVVM.MainViewModel);
             // 

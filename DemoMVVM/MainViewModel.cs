@@ -6,10 +6,10 @@ using Newtonsoft.Json;
 namespace DemoMVVM {
     [POCOViewModel()]
     public class MainViewModel {
-        //public MainViewModel(IConfiguration configuration) {
-        //    WebsiteName = configuration.GetValue<string>("WebsiteMetadata:Name");
-        //    WebsiteUrl = configuration.GetValue<string>("WebsiteMetadata:Url");
-        //}
+        public MainViewModel(IConfiguration configuration) {
+            WebsiteName = configuration.GetValue<string>("WebsiteMetadata:Name");
+            WebsiteUrl = configuration.GetValue<string>("WebsiteMetadata:Url");
+        }
 
         public virtual string WebsiteName { get; set; }
         public virtual string WebsiteUrl { get; set; }
